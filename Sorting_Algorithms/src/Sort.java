@@ -5,8 +5,8 @@ public class Sort {
     public static void main(String[] args){
         Scanner s1 = new Scanner(System.in);
 		// BubbleSort bubbleSort = new BubbleSort();
-		SelectionSort selectionSort = new SelectionSort();
-
+		// SelectionSort selectionSort = new SelectionSort();
+		InsertionSort insertionSort = new InsertionSort();
 		System.out.println("How many numbers?");
 
 		int n = s1.nextInt();
@@ -21,7 +21,9 @@ public class Sort {
 	 	// arr_cpy = bubbleSort.bubbleSortIterative(arr);
 		// arr_cpy = selectionSort.selectionSortIterative(arr);
 		// arr_cpy = bubbleSort.bubbleSortRecursive(arr,n);
-		arr_cpy = selectionSort.selectionSortRecursive(arr,0);
+		// arr_cpy = selectionSort.selectionSortRecursive(arr,0);
+		arr_cpy = insertionSort.insertionSortIterative(arr);
+		// arr_cpy = insertionSort.insertionSortRecursive(arr, n);
 
 		for(int x:arr_cpy) System.out.println(x);
     }
